@@ -1,0 +1,269 @@
+body {
+    background-color: #010001;
+    margin: 0;
+    padding-top: 30px;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+}
+
+
+.header {
+    max-width: 1230px;
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-nav__list {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.main-nav__link {
+    color: #ffffff;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: none;
+}
+
+.secondary-nav__link {
+    color: #808080;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: none;
+}
+
+.secondary-nav__list {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+
+}
+
+.title {
+    margin-top: 120px;
+    font-weight: 400;
+    text-align: center;
+    font-size: 64px;
+    margin-bottom: 0;
+}
+
+.description {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    max-width: 268px;
+    margin: auto;
+    margin-top: 26px;
+}
+
+.description::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 59px;
+    background-color: #ffffff;
+    margin: auto;
+    margin-top: 26px;
+}
+
+.video {
+    height: 750px;
+    width: 90%;
+    margin: auto;
+    max-width: 1230px;
+}
+
+.overview {
+    max-width: 1230px;
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.features__title {
+    max-width: 177px;
+}
+
+.features__table {
+    margin-top: 45px;
+}
+
+.features__column {
+    font-size: 18px;
+    line-height: 180%;
+    padding: 10px;
+    width: 300px
+}
+
+
+.additional-description {
+    max-width: 1230px;
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    margin-top: 45px;
+}
+
+
+.unmatched-title {
+    margin-top: 218px;
+    max-width: 173px;
+    font-size: 24px;
+
+}
+
+.unmatched-description {
+    margin-top: 45px;
+    max-width: 490px;
+    font-size: 16px;
+
+}
+
+.rocket {
+    position: absolute;
+    right: 0;
+    top: 150px;
+    width: 275px;
+    height: 1600px;
+    z-index: 10;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1230px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 240px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.social-media {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    margin: 0 auto;
+    margin-top: 43px;
+    text-align: center;
+
+}
+
+.footer-nav {
+    margin: 0 auto;
+
+}
+
+.social-media-link {
+    text-decoration: none;
+    margin-right: 20px;
+    color: #ffffff;
+    font-size: 18px;
+
+}
+
+.footer-desicription {
+    margin-top: 20px;
+}
+
+.contacts-btn {
+    display: flex;
+    align-items: center;
+    /* вертикальное центрирование */
+    justify-content: center;
+    /* горизонтальное центрирование (на всякий случай) */
+    box-sizing: border-box;
+    margin-top: 30px;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    min-width: 260px;
+    min-height: 60px;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px;
+
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header .logo {
+        margin-bottom: 20px;
+    }
+
+    .main-nav {
+        margin-bottom: 20px;
+    }
+        .features__column {
+        width: 200px;
+    }
+
+    .rocket {
+        max-width: 180px;
+    }
+
+    .video {
+        width: 100%;
+    }
+    .unmatched-title {
+    margin-top: 18px;
+    }
+    .footer {
+        margin-top: 10px;
+
+    }
+
+    .social-media {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 576px) {
+    .title{
+        margin-top: 40px;
+    }
+    .rocket {
+        position: static;
+    }
+
+    .features__table {
+        margin-top: 0;
+    }
+
+    .features__column {
+        font-size: 14px;
+        width: 150px;
+    }
+
+    .unmatched-title {
+    margin-top: 18px;
+    }
+    .social-media {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer {
+        text-align: center;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    
+}
